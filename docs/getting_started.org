@@ -33,6 +33,8 @@ us know!
       - [[#with-chocolatey--scoop][With chocolatey / scoop]]
       - [[#with-a-precompiled-binary--git-bash][With a precompiled binary + Git Bash]]
       - [[#with-wsl--ubuntu-1804-lts][With WSL + Ubuntu 18.04 LTS]]
+    - [[#on-android][On Android]]
+      - [[#termux][Termux]]
   - [[#doom-emacs][Doom Emacs]]
     - [[#the-bindoom-utility][The ~bin/doom~ utility]]
     - [[#install-doom-manually][Install Doom Manually]]
@@ -267,6 +269,7 @@ emerge '>=dev-vcs/git-2.23' '>=sys-apps/ripgrep-11.0' sys-apps/findutils
 emerge '>=sys-apps/fd-7.3.0'
 #+end_src
 
+
 *** On macOS
 MacOS users have many options for installing Emacs, but not all of them are well
 suited to Doom. Before we get to that you'll need either the Homebrew or
@@ -459,6 +462,17 @@ bin/doom command.
    #+END_SRC
 
 And done! Keep Ubuntu open, you'll need it for the rest of this guide.
+
+*** On Android
+
+
+**** Termux
+#+BEGIN_SRC bash
+# required dependencies
+pkg install git emacs ripgrep
+# optional dependencies
+pkg install fd
+#+END_SRC
 
 ** Doom Emacs
 With Emacs and Doom's dependencies installed, next is to install Doom Emacs
